@@ -1,14 +1,14 @@
-# def number_split(num):
-#     lst = []
-#     m = num // 2
-#     lst.append(m)
-#     lst.append(m)
-#     return lst
-#
-# print(number_split(4))
-# print(number_split(10))
-# print(number_split(11))
-# print(number_split(-9))
+def number_split(num):
+    s = num // 2
+    if num % 2 != 0:
+        return [s, s + 1]
+    else:
+        return [s, s]
+
+print(number_split(4))
+print(number_split(10))
+print(number_split(11))
+print(number_split(-9))
 
 #inp = input("yozing; ")
 
